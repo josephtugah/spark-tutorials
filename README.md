@@ -262,9 +262,47 @@ This guide provides step-by-step instructions for setting up a Hadoop cluster on
 
 ### Step 8: Update Security Group Rules
 1. **Allow Inbound Rules in Security Group:**
+   - If you temporarily need to access the YARN UI externally without tunneling, you can add an inbound rule to the EC2 instance’s security group.
    - Add custom TCP ports for NameNode (9870) and YARN (8088).
    - Set CIDR blocks to `0.0.0.0/0` for access from any IP address.
-
+   - 
 ---
+Your Hadoop cluster setup is now complete! You can access the NameNode at `<EC2_Public_IPv4_adresses>:9870` and the YARN dashboard at `<EC2_Public_IPv4_adresses>:8088`.
 
-Your Hadoop cluster setup is now complete! You can access the NameNode at `<EC2_Private_IPv4_adresses>:9870` and the YARN dashboard at `<EC2_Private_IPv4_adresses>:8088`.
+
+### Step 9: Use an SSH Tunne to access YARN Resource Manager (This is the most secure way)
+   - **Verifying YARN ResourceManager is Running**
+
+   To ensure that YARN ResourceManager is running and accessible on port `8088`:
+
+   1. SSH into your EC2 instance.
+   2. Run the following command to check for active Hadoop processes:
+      ```bash
+      jps
+      ```
+      - Look for `ResourceManager` in the list of processes. If you see it listed, the ResourceManager is running.
+   3. If `ResourceManager` is not listed, restart YARN by running:
+      ```bash
+      start-yarn.sh
+      ```
+   4. After starting YARN, you should be able to access the ResourceManager UI through the SSH tunnel setup in your browser at `http://localhost:8088`.
+
+   -**Using Putty on Windows to Access** 
+   - **SSH Tunnel Configuration**
+   - **On Windows (using PuTTY)**:
+     - Open PuTTY, enter the **Public IP** of your EC2 instance, and go to **Connection > SSH > Tunnels**.
+     - Under **Source Port**, enter `8088`. For **Destination**, enter `localhost:8088`.
+     - Click **Add**, then **Open** to start the SSH session.
+   - After setting up the tunnel, you should be able to access the YARN ResourceManager UI by opening your browser and going to `http://localhost:8088`.
+
+  **On Mac or Linux**
+  - Run the following command in your terminal, replacing your-ec2-public-ip with the public IP of your EC2 instance
+    ```bash
+    ssh -L 8088:localhost:8088 ubuntu@your-ec2-public-ip
+    ```
+
+
+
+
+
+

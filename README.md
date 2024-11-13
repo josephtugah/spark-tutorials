@@ -64,6 +64,7 @@ This guide provides step-by-step instructions for setting up a Hadoop cluster on
      nano ~/.bashrc
      ```
    - Add the following lines:
+     Press the "i" key to interact with the shell profile
      ```bash
      export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
      export PATH=$JAVA_HOME/bin:$PATH

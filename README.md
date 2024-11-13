@@ -6,21 +6,18 @@ This guide provides step-by-step instructions for setting up a Hadoop cluster on
 1. **Create an AWS Free Tier Account**
    - Before starting, you need an AWS Free Tier account. If you don’t already have one, you can sign up at the [AWS Free Tier page](https://aws.amazon.com/free).
    
-2. **Additional Setup Instructions**
+2. **Additional Setup Instruction (**
    - [Create a user with administrative access](https://docs.aws.amazon.com/batch/latest/userguide/create-an-iam-account.html)
 
-   - **Create an EC2 Instance**
+3. **Create an EC2 Instance**
      - Follow the instructions in this [tutorial to create an EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/tutorial-launch-my-first-ec2-instance.html). Make sure you select the Free Tier option during the instance creation process.
      - **Important**: Do not terminate the EC2 instance after creating it. You will need it running for your Hadoop cluster setup.
         
-        **Recommended Youtube Tutorial**
-       - To help you create your instance and connect to your EC2 instance using Putty, you can refer to this [YouTube tutorial](https://www.youtube.com/watch?v=I_TkA3zK1S4) which covers the steps for creating the EC2 instance and connecting to it using Putty on Windows.
+   **Recommended Youtube Tutorial**
+- To help you create your instance and connect to your EC2 instance using Putty, you can refer to this [YouTube tutorial](https://www.youtube.com/watch?v=I_TkA3zK1S4) which covers the steps for creating the EC2 instance and connecting to it using Putty on Windows.
 
    - [Create a key pair using Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.html)  
      *Note: We will be using Putty (an SSH and telnet client) to connect to our EC2 instance, so ensure that the private key-pair selected is in `.ppk` format.*
-
-   
-
 
 - **Open Putty and connect to the EC2 VM with the following steps**
   - Hostname: `ubuntu@Public IP Address of EC2>`
@@ -28,7 +25,11 @@ This guide provides step-by-step instructions for setting up a Hadoop cluster on
   - Select SSH
   - Select Auth
   - Select Credentials
-  - At the Private 
+  - At the Private
+    
+<img width="334" alt="Putty Configuration" src="https://github.com/user-attachments/assets/34fa1348-73b4-4b44-bdd7-1ffdf824c440"> 
+
+<img width="331" alt="ppk auth" src="https://github.com/user-attachments/assets/b6523022-be48-489e-893d-77664a6a2077">
 
 
 ---

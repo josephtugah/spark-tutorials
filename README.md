@@ -20,7 +20,7 @@ This guide provides step-by-step instructions for setting up a Hadoop cluster on
      *Note: We will be using Putty (an SSH and telnet client) to connect to our EC2 instance, so ensure that the private key-pair selected is in `.ppk` format.*
 
 - **Open Putty and connect to the EC2 VM with the following steps**
-  - Hostname: `ubuntu@Public IP Address of EC2>`
+  - Hostname: `ubuntu@<Public IP Address of EC2>`
   - Navigate to the Connection section
   - Select SSH
   - Select Auth

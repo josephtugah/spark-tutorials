@@ -270,7 +270,7 @@ This guide provides step-by-step instructions for setting up a Hadoop cluster on
 Your Hadoop cluster setup is now complete! You can access the NameNode at `<EC2_Public_IPv4_adresses>:9870` and the YARN dashboard at `<EC2_Public_IPv4_adresses>:8088`.
 
 
-### Step 9: Use an SSH Tunne to access YARN Resource Manager (This is the most secure way)
+### Step 9: Use an SSH Tunnel to access YARN Resource Manager (This is the most secure way)
    - **Verifying YARN ResourceManager is Running**
 
    To ensure that YARN ResourceManager is running and accessible on port `8088`:

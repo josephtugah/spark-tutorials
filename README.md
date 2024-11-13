@@ -6,7 +6,7 @@ This guide provides step-by-step instructions for setting up a Hadoop cluster on
 1. **Create an AWS Free Tier Account**
    - Before starting, you need an AWS Free Tier account. If you don’t already have one, you can sign up at the [AWS Free Tier page](https://aws.amazon.com/free).
    
-2. **Additional Setup Instruction (**
+2. **Additional Setup Instruction**
    - [Create a user with administrative access](https://docs.aws.amazon.com/batch/latest/userguide/create-an-iam-account.html)
 
 3. **Create an EC2 Instance**

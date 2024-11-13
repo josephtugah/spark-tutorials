@@ -267,4 +267,4 @@ This guide provides step-by-step instructions for setting up a Hadoop cluster on
 
 ---
 
-Your Hadoop cluster setup is now complete! You can access the NameNode at `<EC2_Public_IP>:9870` and the YARN dashboard at `<EC2_Public_IP>:8088`.
+Your Hadoop cluster setup is now complete! You can access the NameNode at `<EC2_Private_IPv4_adresses>:9870` and the YARN dashboard at `<EC2_Private_IPv4_adresses>:8088`.

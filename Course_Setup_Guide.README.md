@@ -18,7 +18,7 @@ This repository will guide you through the steps to set up your development envi
    - Instructions to build the docker container are in the README file in the `pyspark-jupyter-lab` folder.
 
 
-4. Once the container is running, open your browser and go to your logs in the Docker container use the provided host link to access the Jupyter Lab environment where you'll be working with PySpark.
+4. Once the container is running, open your browser and go to your logs in the Docker container use the provided host link with the token to access the Jupyter Lab environment where you'll be working with PySpark.
 
 ## Step 3: Additional Setup (Details Coming Soon)
 

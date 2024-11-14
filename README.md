@@ -10,7 +10,7 @@ This repository will guide you through the steps to set up your development envi
    - Docker is required for running containers for your PySpark environment.
    - Make sure Docker is properly installed and running before proceeding to the next step.
 
-## Step 2: Set up PySpark Jupyter Lab Container
+## Step 2: Set up PySpark Jupyter Lab Environment
 
 1. After installing Docker, navigate to the `pyspark-jupyter-lab` folder.
 2. Use the Dockerfile provided in the folder to create a Docker container for running PySpark in Jupyter Lab.

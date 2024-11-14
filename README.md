@@ -20,9 +20,9 @@ This repository will guide you through the steps to set up your development envi
 
 4. Once the container is running, open your browser and go to your logs in the Docker container use the provided host link with the token to access the Jupyter Lab environment where you'll be working with PySpark.
 
-## Step 3: Additional Setup (Details Coming Soon)
+## Step 3: Set up Pyspark Jupyter Environment for Structured Streaming
 
-- Further instructions will be provided for Step 3, which will involve advanced configurations and setup.
+- Refer to the README file in the `spark-structured-streaming` folder
 
 ## Step 4: Set up Apache Spark on Hadoop Cluster in AWS
 

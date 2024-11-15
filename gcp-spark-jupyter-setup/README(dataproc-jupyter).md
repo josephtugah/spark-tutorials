@@ -25,28 +25,40 @@ With Dataproc, you can create a fully functional cluster with Jupyter in under t
 
 ### Step 1: Create a GCP Project  
 1. Sign in to [Google Cloud Console](https://console.cloud.google.com).  
-2. Create a new project from the dashboard.  
-3. Enable billing to use GCP resources.  
+2. Create a new project from the dashboard.
+   <img width="580" alt="create-spark-project" src="https://github.com/user-attachments/assets/203eea5e-fac2-4840-9560-4ec48882a619">
+ 
+4. Enable billing to use GCP resources.  
 
 ### Step 2: Set Up Your Environment  
-1. Open **Cloud Shell** (top-right corner in the GCP console).  
-2. Set your project ID:  
+1. Open **Cloud Shell** (top-right corner in the GCP console).
+
+   <img width="597" alt="3setup-cloud-env" src="https://github.com/user-attachments/assets/3abe9be0-5692-47b7-91f3-31d7c4236f74">
+
+2. Set your project ID:
+    ![Screenshot 2024-11-15 192624](https://github.com/user-attachments/assets/c8640599-dafc-4f6d-a258-a20430bf9e7f)
+
    ```bash
    gcloud config set project <project_id>
    ```  
    Replace `<project_id>` with the ID of your project.  
 
-3. Enable required APIs:  
+4. Enable required APIs:
+   - Using the cloud shell;
    ```bash
    gcloud services enable dataproc.googleapis.com \
      compute.googleapis.com \
      storage-component.googleapis.com \
      bigquery.googleapis.com \
      bigquerystorage.googleapis.com
-   ```  
+   ```
+   - Using the GCP Console
+     ![Screenshot 2024-11-15 192952](https://github.com/user-attachments/assets/bd0c89db-a930-4aaa-b67f-b6fcd398033f)
+
 
 ### Step 3: Create a Google Cloud Storage (GCS) Bucket  
-1. Define your region and bucket name:  
+1. Define your region and bucket name:
+   Using the cloud shell
    ```bash
    REGION=us-central1
    BUCKET_NAME=<your-bucket-name>
@@ -54,7 +66,7 @@ With Dataproc, you can create a fully functional cluster with Jupyter in under t
    Replace `<your-bucket-name>` with a unique name. 
 
 
-2. Create the bucket:  
+3. Create the bucket:  
    ```bash
    gsutil mb -c standard -l ${REGION} gs://${BUCKET_NAME}
    ```  
@@ -63,6 +75,11 @@ With Dataproc, you can create a fully functional cluster with Jupyter in under t
    ```bash
    Creating gs://<your-bucket-name>/...
    ```
+   - Navigate to your Cloud Storage UI page on your console
+   - Click on the bucket you created
+   - Select configurations and change the access control from fine-grain to uniform
+![bucket-access-conf](https://github.com/user-attachments/assets/2abdbd65-b842-459e-a802-ac575327c8e2)
+
 ---
 
 ### Step 4: Create a Dataproc Cluster  
@@ -112,6 +129,7 @@ You should the following output once the cluster is created:
 ```bash
 Created [https://dataproc.googleapis.com/v1beta2/projects/project-id/regions/us-central1/clusters/<your-cluster-name>] Cluster placed in zone [us-central1-a].
 ```
+<img width="746" alt="dataproc-UI" src="https://github.com/user-attachments/assets/053a576e-e4cc-47c7-9011-1aa51273f9ef">
 
 ---
 
@@ -119,6 +137,7 @@ Created [https://dataproc.googleapis.com/v1beta2/projects/project-id/regions/us-
 1. Go to **Dataproc Clusters** in the Cloud Console.  
 2. Select your cluster and click on the **Web Interfaces** tab.  
 3. Access JupyterLab via the Component Gateway link.  
+<img width="746" alt="jupyter-env" src="https://github.com/user-attachments/assets/8d40263f-6d5c-440b-918f-082c19137837">
 
 ---
 

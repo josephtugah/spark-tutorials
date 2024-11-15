@@ -26,9 +26,10 @@ With Dataproc, you can create a fully functional cluster with Jupyter in under t
 ### Step 1: Create a GCP Project  
 1. Sign in to [Google Cloud Console](https://console.cloud.google.com).  
 2. Create a new project from the dashboard.
+   
    <img width="580" alt="create-spark-project" src="https://github.com/user-attachments/assets/203eea5e-fac2-4840-9560-4ec48882a619">
  
-4. Enable billing to use GCP resources.  
+3. Enable billing to use GCP resources.  
 
 ### Step 2: Set Up Your Environment  
 1. Open **Cloud Shell** (top-right corner in the GCP console).
@@ -58,7 +59,7 @@ With Dataproc, you can create a fully functional cluster with Jupyter in under t
 
 ### Step 3: Create a Google Cloud Storage (GCS) Bucket  
 1. Define your region and bucket name:
-   Using the cloud shell
+   - Using the cloud shell
    ```bash
    REGION=us-central1
    BUCKET_NAME=<your-bucket-name>
@@ -78,6 +79,7 @@ With Dataproc, you can create a fully functional cluster with Jupyter in under t
    - Navigate to your Cloud Storage UI page on your console
    - Click on the bucket you created
    - Select configurations and change the access control from fine-grain to uniform
+     
 ![bucket-access-conf](https://github.com/user-attachments/assets/2abdbd65-b842-459e-a802-ac575327c8e2)
 
 ---
@@ -88,12 +90,13 @@ With Dataproc, you can create a fully functional cluster with Jupyter in under t
    - **Cloud Resource Manager API**  
    - **Compute Engine API**  
 
-   - The Compute Engine default service account is created automatically when you enable the Compute Engine API in your Google Cloud project for the first time.The account is named in the format: PROJECT_NUMBER-compute@developer.gserviceaccount.com
-   It is created to allow Compute Engine instances (VMs) to perform operations on your behalf, such as accessing other Google Cloud services like Cloud Storage or Dataproc.
+   - The Compute Engine default service account is created automatically when you enable the Compute Engine API in your Google Cloud project for the first time. The account is named in the format: PROJECT_NUMBERcompute@developer.gserviceaccount.com
+   - It is created to allow Compute Engine instances (VMs) to perform operations on your behalf, such as accessing other Google Cloud services like Cloud Storage or Dataproc.
 
    - Visit the IAM & Admin interface and assign the following roles to the default compute engine service
    account by clicking on the pen symbol next to the service account.
-   
+
+<img width="740" alt="compute-engine-permissions" src="https://github.com/user-attachments/assets/d0455331-ae7d-4724-a32c-81a93554bfbe">
 
 2. Define cluster variables: 
    Set the environment variables for your cluster 
@@ -136,7 +139,8 @@ Created [https://dataproc.googleapis.com/v1beta2/projects/project-id/regions/us-
 ### Step 5: Access the JupyterLab Interface  
 1. Go to **Dataproc Clusters** in the Cloud Console.  
 2. Select your cluster and click on the **Web Interfaces** tab.  
-3. Access JupyterLab via the Component Gateway link.  
+3. Access JupyterLab via the Component Gateway link.
+   
 <img width="746" alt="jupyter-env" src="https://github.com/user-attachments/assets/8d40263f-6d5c-440b-918f-082c19137837">
 
 ---

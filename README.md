@@ -30,8 +30,9 @@ This repository will guide you through the steps to set up your development envi
 ## Step 5: Set up Apache Spark on Hadoop Cluster in AWS
 
 1. Navigate to the `aws-spark-setup` folder.
-2. Follow the instructions inside to set up **Apache Spark** on a Hadoop cluster running in an **EC2 instance** on **AWS**.
+2. Follow the instructions in the README file to set up **Apache Spark** on a Hadoop cluster running in an **EC2 instance** on **AWS**.
 3. This setup will allow you to execute distributed Spark jobs on a live cluster.
+4. Installation instructions in the README file at the moment include installing Hadoop on the EC2 instance. Additional instructions will be updated.
 
 ---
 

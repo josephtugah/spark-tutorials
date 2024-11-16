@@ -27,7 +27,7 @@ This repository will guide you through the steps to set up your development envi
 ## Step 4: Set up Jupyter Lab Environment Using Dataproc on GCP
 - Refer to the README file in the `gcp-spark-jupyter-setup` folder
 
-## Step 5: Set up Apache Spark on Hadoop Cluster in AWS
+## Step 5: Set up Apache Spark on Hadoop Cluster on AWS
 
 1. Navigate to the `aws-spark-setup` folder.
 2. Follow the instructions in the README file to set up **Apache Spark** on a Hadoop cluster running in an **EC2 instance** on **AWS**.

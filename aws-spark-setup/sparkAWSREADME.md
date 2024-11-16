@@ -285,7 +285,7 @@ Your Hadoop cluster setup is now complete! You can access the NameNode at `<EC2_
       ```bash
       start-yarn.sh
       ```
-   4. After starting YARN, you should be able to access the ResourceManager UI through the SSH tunnel setup in your browser at `http://localhost:8088`.
+   4. After starting YARN, you should be able to access the ResourceManager UI through the SSH tunnel setup in your browser at `http://<EC2_Public_IPv4_address>:8088`.
 
    -**Using Putty on Windows to Access** 
    - **SSH Tunnel Configuration**

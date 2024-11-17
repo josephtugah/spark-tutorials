@@ -56,11 +56,8 @@ This README provides step-by-step instructions for setting up and running a Spar
 ---
 
 ### 3. Run the Spark Streaming Notebook
-1. Open the `spark-streaming/01_reading_from_sockets.ipynb` file in your Jupyter environment.
-2. Run the code to start the Spark Streaming application:
-   ```python
-   df_raw = spark.readStream.format("socket").option("host", "localhost").option("port", "9999").load()
-   ```
+1. Open the `spark-streaming/02_stream_reading_from_sockets.ipynb` file in your Jupyter environment.
+2. Run the t
 
 3. The Spark application will wait for incoming data from the socket.
 

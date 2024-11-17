@@ -83,7 +83,7 @@ This README provides step-by-step instructions for setting up and running a Spar
 ### 5. View Docker Container Logs
 1. Open another terminal and view the logs of your Docker container:
    ```bash
-   docker logs 987c82e3b7011e7f1e5110846e5b8aa106b79eb48180bfc4d6192d0829d49621
+   docker logs <your-container-id>
    ```
 
 2. Observe the logs for Spark Streaming output as the messages are processed.

@@ -25,7 +25,7 @@ This repository will guide you through the steps to set up your development envi
 
 - Refer to the README file `README(spark-streaming)` in the `spark-structured-streaming` folder to build the docker image and run the container
 - There is notes folder with lecture notes
-- `README(lab-one)`, `README(lab-two-streaming)` have outline steps for your non-graded practice on structured streaming. They are labs to be submitted but they are mandatory practice.
+- `README(lab-one)`, `README(lab-two-streaming)` and `README(practice-three-streaming)` have outlined steps for your non-graded practice on structured streaming. They are not labs to be submitted but they are mandatory practice.
 
 ## Step 4: Set up Jupyter Lab Environment Using Dataproc on GCP
 - Refer to the README file in the `gcp-spark-jupyter-setup` folder

@@ -1,5 +1,5 @@
 
-# Kafka Lab Guide
+# Kafka Practice Guide
 
 This guide provides detailed instructions for working with Apache Kafka in a Docker environment. Follow these steps to create topics, produce messages, consume messages, and manage offsets.
 

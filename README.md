@@ -19,7 +19,7 @@ This repository will guide you through the steps to set up your development envi
 
 
 4. Once the container is running, open your browser and go to your logs in the Docker container use the provided host link with the token to access the Jupyter Lab environment where you'll be working with PySpark.
-5. - There is notes folder with lecture notes
+5. There is a notes folder with lecture notes on RDD, DataFrames, Datasets and SparkSQL
 
 ## Step 3: Set up Pyspark Jupyter Environment for Structured Streaming
 

@@ -19,10 +19,13 @@ This repository will guide you through the steps to set up your development envi
 
 
 4. Once the container is running, open your browser and go to your logs in the Docker container use the provided host link with the token to access the Jupyter Lab environment where you'll be working with PySpark.
+5. - There is notes folder with lecture notes
 
 ## Step 3: Set up Pyspark Jupyter Environment for Structured Streaming
 
-- Refer to the README file in the `spark-structured-streaming` folder
+- Refer to the README file `README(spark-streaming)` in the `spark-structured-streaming` folder to build the docker image and run the container
+- There is notes folder with lecture notes
+- `README(lab-one)` has outline steps for lab one on structured streaming
 
 ## Step 4: Set up Jupyter Lab Environment Using Dataproc on GCP
 - Refer to the README file in the `gcp-spark-jupyter-setup` folder

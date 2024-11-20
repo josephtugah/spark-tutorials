@@ -29,7 +29,7 @@ The files tracked by Git LFS appear as placeholders instead of the actual datase
 Follow the steps below to pull the actual data from the tracked files.
 
 ### Step 1: Open an Interactive Shell in Your Docker Container
-Run the following command to access your Docker container's shell:
+Open Command Prompt and Run the following command to access your Docker container's shell:
 ```bash
 docker exec -it <container-id> /bin/bash
 ```
